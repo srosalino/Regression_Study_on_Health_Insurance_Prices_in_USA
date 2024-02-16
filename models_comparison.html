@@ -1,0 +1,62 @@
+
+<table style="text-align:center"><caption><strong>Linear Models</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">log(charges)</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">age</td><td>0.054<sup>***</sup></td><td>0.055<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.006)</td><td>(0.006)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(age2)</td><td>-0.0002<sup>***</sup></td><td>-0.0002<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.0001)</td><td>(0.0001)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log(bmi)</td><td>0.135<sup>*</sup></td><td>0.107</td></tr>
+<tr><td style="text-align:left"></td><td>(0.067)</td><td>(0.067)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">children</td><td>0.120<sup>***</sup></td><td>0.119<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.011)</td><td>(0.011)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">smoker_yes</td><td>-2.707<sup>***</sup></td><td>-2.045<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.485)</td><td>(0.910)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region_northwest</td><td>-0.078<sup>*</sup></td><td>-0.077<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.037)</td><td>(0.037)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region_southwest</td><td>-0.184<sup>***</sup></td><td>-0.192<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.037)</td><td>(0.037)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region_southeast</td><td>-0.188<sup>***</sup></td><td>-0.185<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.038)</td><td>(0.038)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">sex_male</td><td>-0.106<sup>***</sup></td><td>-0.099<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.026)</td><td>(0.026)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(smoker_yes * region_northwest)</td><td>0.038</td><td>0.030</td></tr>
+<tr><td style="text-align:left"></td><td>(0.084)</td><td>(0.105)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(smoker_yes * region_southwest)</td><td>0.239<sup>**</sup></td><td>0.265<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.085)</td><td>(0.115)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(smoker_yes * region_southeast)</td><td>0.114</td><td>0.088</td></tr>
+<tr><td style="text-align:left"></td><td>(0.080)</td><td>(0.106)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(log(bmi) * smoker_yes)</td><td>1.255<sup>***</sup></td><td>1.053<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.145)</td><td>(0.283)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(children * smoker_yes)</td><td>-0.146<sup>***</sup></td><td>-0.163<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.025)</td><td>(0.033)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(smoker_yes * sex_male)</td><td>0.100</td><td>0.067</td></tr>
+<tr><td style="text-align:left"></td><td>(0.059)</td><td>(0.078)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>6.661<sup>***</sup></td><td>6.673<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.247)</td><td>(0.249)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,338</td><td>1,199</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.793</td><td>0.726</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.791</td><td>0.723</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>0.421 (df = 1322)</td><td>0.419 (df = 1183)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>337.371<sup>***</sup> (df = 15; 1322)</td><td>209.194<sup>***</sup> (df = 15; 1183)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.05; <sup>**</sup>p<0.01; <sup>***</sup>p<0.001</td></tr>
+</table>
